@@ -32,7 +32,8 @@
     AuthenticationViewController *authenticationViewController = [[AuthenticationViewController alloc]initWithNibName:@"AuthenticationViewController" bundle:frameworkBundle];
     
     authenticationViewController.navBarColor = [UIColor blueColor];
-    // set navbar title color
+
+    //Set your auth key here
     authenticationViewController.authkey = @"xyz";
     
     authenticationViewController.navBarColor = [UIColor colorWithRed:30/255.0f green:118/255.0f blue:186/255.0f alpha:1];
