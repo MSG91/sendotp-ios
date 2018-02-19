@@ -100,7 +100,7 @@ Call the AuthenticationViewController using following code.
         authViewControler.navBarTitleColor = UIColor.white
 
         //Set your auth key here
-        authViewControler.authkey = "171178AUdY9sBsHp599c5f2b"
+        authViewControler.authkey = "xxxxxxxxxxxxxxxxxx"
 
         // set company logo
         authViewControler.companyImage = #imageLiteral(resourceName: "defaultLogo.png")
