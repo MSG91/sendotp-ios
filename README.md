@@ -38,7 +38,7 @@ Call the AuthenticationViewController using following code.
         AuthenticationViewController *authenticationViewController = [[AuthenticationViewController alloc]initWithNibName:@"AuthenticationViewController" bundle:frameworkBundle];
 
         // Mandatory auth key......
-        authenticationViewController.authkey = @"171178AUdY9sBsHp599c5f2b";
+        authenticationViewController.authkey = @"xyz";
 
         authenticationViewController.navBarColor = [UIColor blueColor];
 
