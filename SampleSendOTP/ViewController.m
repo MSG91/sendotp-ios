@@ -30,7 +30,7 @@
     NSString *frameworkBundlePath = [frameworkDirPath stringByAppendingPathComponent:@"SendOTPFramework.framework"];
     NSBundle *frameworkBundle = [NSBundle bundleWithPath:frameworkBundlePath];
     AuthenticationViewController *authenticationViewController = [[AuthenticationViewController alloc]initWithNibName:@"AuthenticationViewController" bundle:frameworkBundle];
-    
+    authenticationViewController.delegate = self;
     authenticationViewController.navBarColor = [UIColor blueColor];
 
     //Set your auth key here
