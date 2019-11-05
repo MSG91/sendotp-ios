@@ -17,6 +17,9 @@
 @property (strong, nonatomic) UIColor *navBarTitleColor;
 @property (strong, nonatomic) NSString * authkey;
 @property (strong, nonatomic) NSString * customMessage;
+@property (strong, nonatomic) UIColor * mainAppStatusBarColor;
+
+
 
 @property (nonatomic, assign) BOOL accessTypeShouldBeHTTP;
 @property (strong, nonatomic) NSString * mobileNumber;

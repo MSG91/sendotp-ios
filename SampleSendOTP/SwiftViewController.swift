@@ -27,7 +27,7 @@ class SwiftViewController: UIViewController,SendOTPAuthenticationViewControllerD
         authViewControler.navBarTitleColor = UIColor.white
         
         //Set your auth key here
-        authViewControler.authkey = "xyz"
+        authViewControler.authkey = "247088Ajc6wrMeN1F5bea45e4"
         
         // set company logo
         authViewControler.companyImage = UIImage.init(named: "defaultLogo.png")
@@ -38,6 +38,9 @@ class SwiftViewController: UIViewController,SendOTPAuthenticationViewControllerD
         // set the sender id here
         authViewControler.senderId = "OTPSMS"
         
+        //****Style Mandatory*****
+        authViewControler.modalPresentationStyle = .fullScreen;
+
         self.present(authViewControler, animated: true, completion: nil)
     }
     

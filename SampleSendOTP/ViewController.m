@@ -34,7 +34,7 @@
     authenticationViewController.navBarColor = [UIColor blueColor];
 
     //Set your auth key here
-    authenticationViewController.authkey = @"xyz";
+    authenticationViewController.authkey = @"247088Ajc6wrMeN1F5bea45e4";
     
     authenticationViewController.navBarColor = [UIColor colorWithRed:30/255.0f green:118/255.0f blue:186/255.0f alpha:1];
     // set navbar title color
@@ -43,6 +43,10 @@
     authenticationViewController.companyImage = [UIImage imageNamed:@"defaultLogo"];
     // set custom message here with ##OTP##
     authenticationViewController.customMessage = @"Your verification code is ##OTP##.";
+    
+    //****Style Mandatory*****
+    authenticationViewController.modalPresentationStyle = UIModalPresentationFullScreen;
+
     // set the sender id here
     authenticationViewController.senderId = @"OTPSMS";
     [self presentViewController:authenticationViewController animated:YES completion:nil];
