@@ -1,3 +1,5 @@
+
+
 SendOTP iOS Usage Documentation
 
 Download SendOTPFramework.framework
@@ -30,6 +32,11 @@ Accept the following delegates -  <SendOTPAuthenticationViewControllerDelegate>
 SendOTPAuthenticationViewControllerDelegate
 
 Call the AuthenticationViewController using following code.
+
+iOS 13 Mandatory change:-
+
+        authenticationViewController.modalPresentationStyle = UIModalPresentationFullScreen;
+
 
 
         NSString *frameworkDirPath = [[NSBundle mainBundle] privateFrameworksPath];
