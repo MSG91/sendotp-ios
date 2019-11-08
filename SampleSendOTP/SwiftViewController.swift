@@ -27,7 +27,7 @@ class SwiftViewController: UIViewController,SendOTPAuthenticationViewControllerD
         authViewControler.navBarTitleColor = UIColor.white
         
         //Set your auth key here
-        authViewControler.authkey = "247088Ajc6wrMeN1F5bea45e4"
+        authViewControler.authkey = "xyz"
         
         // set company logo
         authViewControler.companyImage = UIImage.init(named: "defaultLogo.png")
