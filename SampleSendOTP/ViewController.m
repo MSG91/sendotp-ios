@@ -34,7 +34,7 @@
     authenticationViewController.navBarColor = [UIColor blueColor];
 
     //Set your auth key here
-    authenticationViewController.authkey = @"247088Ajc6wrMeN1F5bea45e4";
+    authenticationViewController.authkey = @"xyz";
     
     authenticationViewController.navBarColor = [UIColor colorWithRed:30/255.0f green:118/255.0f blue:186/255.0f alpha:1];
     // set navbar title color
