@@ -33,16 +33,17 @@
     authenticationViewController.delegate = self;
     authenticationViewController.navBarColor = [UIColor blueColor];
 
-    //Set your auth key here
+    //Set your auth key* here
     authenticationViewController.authkey = @"xyz";
-    
+    //Set your templete id*
+    authenticationViewController.templateId = @"abc";
     authenticationViewController.navBarColor = [UIColor colorWithRed:30/255.0f green:118/255.0f blue:186/255.0f alpha:1];
     // set navbar title color
     authenticationViewController.navBarTitleColor = [UIColor whiteColor];
     // set company logo
     authenticationViewController.companyImage = [UIImage imageNamed:@"defaultLogo"];
-    // set custom message here with ##OTP##
-    authenticationViewController.customMessage = @"Your verification code is ##OTP##.";
+    // set custom message here with ##OTP## // Removed -- replaced with templete id
+//    authenticationViewController.customMessage = @"Your verification code is ##OTP##.";
     
     //****Style Mandatory*****
     authenticationViewController.modalPresentationStyle = UIModalPresentationFullScreen;

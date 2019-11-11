@@ -26,14 +26,16 @@ class SwiftViewController: UIViewController,SendOTPAuthenticationViewControllerD
         // set navbar title color
         authViewControler.navBarTitleColor = UIColor.white
         
-        //Set your auth key here
+        //Set your auth key* here
         authViewControler.authkey = "xyz"
+        //Set your templete id*
+        authViewControler.templateId = "abc"
         
         // set company logo
         authViewControler.companyImage = UIImage.init(named: "defaultLogo.png")
         
-        // set custom message here with ##OTP##
-        authViewControler.customMessage = "Your verification code is ##OTP##."
+        // set custom message here with ##OTP## // Removed -- replaced with templete id
+        //authViewControler.customMessage = "Your verification code is ##OTP##."
         
         // set the sender id here
         authViewControler.senderId = "OTPSMS"

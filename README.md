@@ -44,11 +44,11 @@ iOS 13 Mandatory change:-
         NSBundle *frameworkBundle = [NSBundle bundleWithPath:frameworkBundlePath];
         AuthenticationViewController *authenticationViewController = [[AuthenticationViewController alloc]initWithNibName:@"AuthenticationViewController" bundle:frameworkBundle];
 
-        // Mandatory auth key......
+        // Mandatory auth key*......
         authenticationViewController.authkey = @"xyz";
-
-        authenticationViewController.navBarColor = [UIColor blueColor];
-
+        //Set your templete id*
+        authenticationViewController.templateId = @"abc";
+        
         authenticationViewController.navBarColor = [UIColor colorWithRed:30/255.0f green:118/255.0f blue:186/255.0f alpha:1];
 
         // set navbar title color
@@ -57,8 +57,8 @@ iOS 13 Mandatory change:-
         // set company logo
         authenticationViewController.companyImage = [UIImage imageNamed:@"defaultLogo"];
 
-        // set custom message here with ##OTP##
-        authenticationViewController.customMessage = @"Your verification code is ##OTP##.";
+        // set custom message here with ##OTP## // Removed -- replaced with templete id
+        //authenticationViewController.customMessage = @"Your verification code is ##OTP##.";
 
         // set the sender id here
         authenticationViewController.senderId = @"OTPSMS";
