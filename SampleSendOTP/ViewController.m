@@ -47,6 +47,9 @@
     
     //****Style Mandatory*****
     authenticationViewController.modalPresentationStyle = UIModalPresentationFullScreen;
+    
+    
+    authenticationViewController.DLT_TE_ID = @"123456789";
 
     // set the sender id here
     authenticationViewController.senderId = @"OTPSMS";

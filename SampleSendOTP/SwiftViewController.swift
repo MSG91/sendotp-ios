@@ -40,6 +40,8 @@ class SwiftViewController: UIViewController,SendOTPAuthenticationViewControllerD
         // set the sender id here
         authViewControler.senderId = "OTPSMS"
         
+        //Pass DLT_TE_ID here
+        authViewControler.dlt_TE_ID = "123456789"
         //****Style Mandatory*****
         authViewControler.modalPresentationStyle = .fullScreen;
 

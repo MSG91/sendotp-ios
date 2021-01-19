@@ -18,6 +18,7 @@
 @property (strong, nonatomic) NSString * authkey;
 //@property (strong, nonatomic) NSString * customMessage;
 //@property (strong, nonatomic) UIColor * mainAppStatusBarColor;
+@property (strong, nonatomic) NSString * DLT_TE_ID;
 
 
 @property (strong, nonatomic) NSString * templateId;
