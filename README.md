@@ -62,6 +62,9 @@ iOS 13 Mandatory change:-
 
         // set the sender id here
         authenticationViewController.senderId = @"OTPSMS";
+    
+        //Mandatory DLT_TE_ID
+        //authenticationViewController.DLT_TE_ID = @"123456789";
 
         // set access type here
         authenticationViewController.accessTypeShouldBeHTTP = false; // sets https by default
@@ -117,6 +120,9 @@ Call the AuthenticationViewController using following code.
 
         // set the sender id here
         authViewControler.senderId = "OTPSMS"
+  
+        //Mandatory
+        //authViewControler.dlt_TE_ID = "123456789"
 
         // set access type here
         authViewControler.accessTypeShouldBeHTTP = false // sets https by default
