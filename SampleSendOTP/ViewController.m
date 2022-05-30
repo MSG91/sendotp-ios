@@ -34,7 +34,7 @@
     authenticationViewController.navBarColor = [UIColor blueColor];
 
     //Set your auth key* here
-    authenticationViewController.authkey = @"xyz";
+    authenticationViewController.tokenAuth = @"xyz";
     //Set your templete id*
     authenticationViewController.templateId = @"abc";
     authenticationViewController.navBarColor = [UIColor colorWithRed:30/255.0f green:118/255.0f blue:186/255.0f alpha:1];
@@ -42,17 +42,10 @@
     authenticationViewController.navBarTitleColor = [UIColor whiteColor];
     // set company logo
     authenticationViewController.companyImage = [UIImage imageNamed:@"defaultLogo"];
-    // set custom message here with ##OTP## // Removed -- replaced with templete id
-//    authenticationViewController.customMessage = @"Your verification code is ##OTP##.";
-    
+ 
     //****Style Mandatory*****
     authenticationViewController.modalPresentationStyle = UIModalPresentationFullScreen;
     
-    
-    authenticationViewController.DLT_TE_ID = @"123456789";
-
-    // set the sender id here
-    authenticationViewController.senderId = @"OTPSMS";
     [self presentViewController:authenticationViewController animated:YES completion:nil];
 }
 - (void)didReceiveMemoryWarning {
