@@ -60,14 +60,6 @@ iOS 13 Mandatory change:-
         // set custom message here with ##OTP## // Removed -- replaced with templete id
         //authenticationViewController.customMessage = @"Your verification code is ##OTP##.";
 
-        // set the sender id here
-        authenticationViewController.senderId = @"OTPSMS";
-    
-        //Mandatory DLT_TE_ID
-        //authenticationViewController.DLT_TE_ID = @"123456789";
-
-        // set access type here
-        authenticationViewController.accessTypeShouldBeHTTP = false; // sets https by default
         [self presentViewController:authenticationViewController animated:YES completion:nil];
 
 
@@ -114,18 +106,6 @@ Call the AuthenticationViewController using following code.
 
         // set company logo
         authViewControler.companyImage = #imageLiteral(resourceName: "defaultLogo.png")
-
-        // set custom message here with ##OTP##
-        authViewControler.customMessage = "Your verification code is ##OTP##."
-
-        // set the sender id here
-        authViewControler.senderId = "OTPSMS"
-  
-        //Mandatory
-        //authViewControler.dlt_TE_ID = "123456789"
-
-        // set access type here
-        authViewControler.accessTypeShouldBeHTTP = false // sets https by default
 
         self.present(authViewControler, animated: true, completion: nil)
 
